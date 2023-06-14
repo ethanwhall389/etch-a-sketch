@@ -1,0 +1,22 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.gridContainer {
+    width: 320px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    background: red;
+    height: 20px;
+    width: 20px;
+
+}
+
