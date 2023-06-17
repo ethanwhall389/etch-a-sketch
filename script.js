@@ -48,20 +48,36 @@ function newGrid () {
 
 
 
-    let optionBlue = document.querySelector('.optionBlue');
-    let optionGreen = document.querySelector('.optionGreen');
-    let optionRed = document.querySelector('.optionRed');
-    optionBlue.addEventListener('click', () => {
-        color = 'blue'
-        console.log ('click');
-    });
+let paintOptionBlue = document.querySelector('.optionBlue');
+let paintOptionGreen = document.querySelector('.optionGreen');
+let paintOptionRed = document.querySelector('.optionRed');
 
-    optionGreen.addEventListener('click', () => {
-        color = 'green'
-        console.log ('click');
-    });
+paintOptionBlue.addEventListener('click', () => {
+    color = 'blue'
+});
 
-    optionRed.addEventListener('click', () => {
-        color = 'red'
-        console.log ('click');
-    });
+paintOptionGreen.addEventListener('click', () => {
+    color = 'green'
+});
+
+paintOptionRed.addEventListener('click', () => {
+    color = 'red'
+});
+
+
+let canvOptionBlue = document.querySelector('.canvOptionBlue');
+let canvOptionPink = document.querySelector('.canvOptionPink');
+let canvOptionYellow = document.querySelector('.canvOptionYellow');
+let boxes = document.querySelector('.box');
+
+canvOptionBlue.addEventListener('click', () => { changeCanvColor('lightblue') }); // we are puuting the function inside an anonymous function to keep it from being called immediately.
+canvOptionPink.addEventListener('click', () => { changeCanvColor('pink') });
+canvOptionYellow.addEventListener('click', () => { changeCanvColor('yellow') });
+
+function changeCanvColor (color) {
+    let boxChildren = gridContainer.children;
+    for (let i = 0; i < boxChildren.length; i++) {
+        boxChildren[i].style.background = color;
+    }
+}
+

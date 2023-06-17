@@ -30,6 +30,12 @@ body {
 
 /* Color picker */
 
+.optionsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .colorPickContainer {
     border: 5px solid black;
     border-radius: 5px;
@@ -45,6 +51,7 @@ body {
 
 .colorOption:hover {
     color: pink;
+    cursor: pointer;
 }
 
 .colorBlock {
@@ -56,6 +63,7 @@ body {
 .colorBlock:hover {
     width: 35px;
     height: 35px;
+    cursor: pointer;
 }
 
 .block01 {
@@ -68,4 +76,16 @@ body {
 
 .block03 {
     background: red;
+}
+
+.blockLightBlue {
+    background: lightblue;
+}
+
+.blockPink {
+    background: pink;
+}
+
+.blockYellow {
+    background: yellow;
 }
