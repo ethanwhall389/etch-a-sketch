@@ -45,6 +45,7 @@ function newGrid () {
 let paintOptionBlue = document.querySelector('.optionBlue');
 let paintOptionGreen = document.querySelector('.optionGreen');
 let paintOptionRed = document.querySelector('.optionRed');
+let paintOptionRandom = document.querySelector('.optionRandom');
 
 paintOptionBlue.addEventListener('click', () => {
     color = 'blue'
@@ -57,6 +58,14 @@ paintOptionGreen.addEventListener('click', () => {
 paintOptionRed.addEventListener('click', () => {
     color = 'red'
 });
+
+paintOptionRandom.addEventListener('click', () => {
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    color = `rgb(${r}, ${g}, ${b})`;
+    document.querySelector('.block04').style.background = color;
+})
 
 
 let canvOptionBlue = document.querySelector('.canvOptionBlue');
