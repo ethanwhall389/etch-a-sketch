@@ -1,18 +1,12 @@
 
 
 
-// box.addEventListener('hover', () => {
-//     box.style.background = 'blue';
-// })
-
-
 let gridContainer = document.querySelector('.gridContainer');
 let color = 'green';
 
 function createGrid (squares) {
     let totalSquares = squares * squares;
     for (let i = 0; i < totalSquares; i++) {
-        // gridContainer.removeChild(square);
         let square = document.createElement('div');
         gridContainer.appendChild(square);
         square.classList.add('box');

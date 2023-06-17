@@ -1,9 +1,17 @@
 body {
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+
+.mainContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .gridContainer {
@@ -14,6 +22,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     border: 15px solid black;
+    border-radius: 10px;
 }
 
 .padContainer {
@@ -27,6 +36,21 @@ body {
     background: lightblue;
 
 }
+
+.bttnChangeGrid {
+    border: none;
+    background: lightblue;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 100ms;
+}
+
+.bttnChangeGrid:hover {
+    background-color: rgb(125, 200, 225);
+}
+
+
 
 /* Color picker */
 
