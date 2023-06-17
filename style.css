@@ -1,9 +1,9 @@
 body {
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 .gridContainer {
@@ -16,8 +16,56 @@ body {
     border: 15px solid black;
 }
 
+.padContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 .box {
-    background: red;
+    background: lightblue;
 
 }
 
+/* Color picker */
+
+.colorPickContainer {
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 5px 25px;
+}
+
+.colorOption {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.colorOption:hover {
+    color: pink;
+}
+
+.colorBlock {
+    width: 30px;
+    height: 30px;
+    transition: 100ms;
+}
+
+.colorBlock:hover {
+    width: 35px;
+    height: 35px;
+}
+
+.block01 {
+    background: blue;
+}
+
+.block02 {
+    background: green;
+}
+
+.block03 {
+    background: red;
+}
